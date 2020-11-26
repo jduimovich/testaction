@@ -2,11 +2,10 @@ name: CI
 on: push
 
 jobs:
-  linux:
+  pulll_push:
     name: Pull Push
     runs-on: ubuntu-latest  
     steps:  
-
     - name: Echo CMD 
       run: echo "docker pull docker.io/jduimovich/rgb:81f3d0b"
         
