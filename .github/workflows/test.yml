@@ -1,10 +1,11 @@
-name: test
-on: [push]
+name: Test
+on: push
+
 jobs:
-  test:
-    runs-on: ubuntu-latest   
-      - name: Just Pull
-        env:
-          TEST: test 
-        run: | 
-          docker pull docker.io/jduimovich/rgb:81f3d0b  
+  pp:
+    name: Push Pull
+    runs-on: ubuntu-latestc
+    steps: 
+
+    - name: Docker steps
+      run: docker pull docker.io/jduimovich/rgb:81f3d0b    
