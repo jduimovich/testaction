@@ -1,0 +1,10 @@
+name: test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest   
+      - name: Just Pull
+        env:
+          TEST: test 
+        run: | 
+          docker pull docker.io/jduimovich/rgb:81f3d0b  
