@@ -14,7 +14,7 @@ jobs:
     steps:  
     - name: Pull and Re-push
       id: dpp
-      uses: jduimovich/docker-pull-push@master
+      uses: jduimovich/docker-pull-push@main
       with:
         image: 'docker.io/jduimovich/rgb:81f3d0b'
         user: ${{ env.REGISTRY_USER }}
