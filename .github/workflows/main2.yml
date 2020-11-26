@@ -1,0 +1,16 @@
+name: CI
+on: push
+
+jobs:
+  linux:
+    name: Pull Push
+    runs-on: ubuntu-latest  
+    steps:  
+
+    - name: Echo CMD 
+      run: echo "docker pull docker.io/jduimovich/rgb:81f3d0b"
+        
+    - name: Docker Pull
+      run: docker pull docker.io/jduimovich/rgb:81f3d0b  
+
+  
